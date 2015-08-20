@@ -1,0 +1,8 @@
+<template name='nav'>
+  {{> loginButtons}}
+
+  {{#if currentUser }}
+    <a href="{{pathFor 'auctionCreate'}}">Create a new auction</a>
+    <a href="{{pathFor 'auctionList'}}">Show the auctions</a>
+  {{/if }}
+</template>
