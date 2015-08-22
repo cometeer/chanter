@@ -8,3 +8,7 @@ meteor-platform
 accounts-ui
 iron:router
 accounts-password
+twbs:bootstrap
+tsega:bootstrap3-datetimepicker
+sanjo:jasmine
+velocity:html-reporter

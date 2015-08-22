@@ -1,3 +1,29 @@
 <template name='auctionCreate'>
-  TESTTTT?
+  <div class="container">
+    <h2 class="centered">Create a new auction</h2>
+    <p>
+      Once the auction is created it will be queued to start at the given time. Once that happens the value of the auction will continuously move from it's initial value to it final value until someone buys out the auction or the time runs out, after which the auction fails.
+    </p>
+    <form name="auctionCreate" autocomplete="off">
+      <div class="form-group">
+        <label for="auction">Auction:</label>
+        <input type="text" name="auction" placeholder="" class="form-control" />
+        <div class="input-group datetimepicker">
+          <label for="StartDateTime">The date and time the action starts:</label>
+          <input type="datetime" name="StartDateTime" class="form-control" />
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+        </div>
+        <div class="input-group datetimepicker">
+          <label for="EndDateTime">The date and time the action ends:</label>
+          <input type="datetime" name="EndDateTime" class="form-control" />
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+        </div>
+        <label for="InitialValue">The initial value at which the auction starts:</label>
+        <input type="number" name="InitialValue" placeholder="" class="form-control" />
+        <label for="FinalValue">The final value at which the auction ends:</label>
+        <input type="number" name="FinalValue" placeholder="" class="form-control" />
+        <input type="submit" value="Submit" class="btn btn-default" />
+      </div>
+    </form>
+  </div>
 </template>
