@@ -15,7 +15,10 @@ Template.auctionCreate.events({
       initVal: $(event.target).find('[name=InitialValue]').val(),
       finalVal: $(event.target).find('[name=FinalValue]').val()
     };
-    //    console.log(auction);
+    console.log(auction);
+    auction.start = moment(auction.start).format();
+    auction.end = moment(auction.end).format();
+    console.log(auction);
     Meteor.call('auctionCreate', auction, function (error, result) {
       if (error) {
         alert(error.reason);

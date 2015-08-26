@@ -12,3 +12,4 @@ twbs:bootstrap
 tsega:bootstrap3-datetimepicker
 sanjo:jasmine
 velocity:html-reporter
+momentjs:moment
